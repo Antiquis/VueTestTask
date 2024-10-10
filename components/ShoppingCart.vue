@@ -38,6 +38,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.4px;
   }
   .VectorImg {
     height: 35px;
@@ -46,6 +50,14 @@
   .VectorImgDiv {
     display: flex;
     justify-content: flex-end;
+  }
+  .total-cost-price {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17.4px;
+  text-align: left;
+
   }
   </style>
   

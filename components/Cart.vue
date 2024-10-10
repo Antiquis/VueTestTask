@@ -1,12 +1,12 @@
 <template>
   <div class="cart">
-    <h3>Итого</h3>
+    <h3 class="cartTitle">Итого</h3>
     <div class="quantity">
       <p>Общая Стоимость:</p>
       <div class="total-cost-price">{{ total }} ₽</div>
     </div>
     <div class="quantity">
-      <p>Количество товаров: {{ totalQuantity }} шт</p>
+      <p class="">Количество товаров: {{ totalQuantity }} шт</p>
     </div>
     <div class="installation-option">
       <p>Установка: {{ installationSelected ? 'Да' : 'Нет' }}</p>
@@ -58,7 +58,14 @@ const submitOrder = async () => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.cartTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.93px;
+  text-align: left;
+}
 
 .cart {
   display: flex;
@@ -93,6 +100,11 @@ h2 {
 
 .installation-option {
   margin: 15px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.2px;
+  text-align: left;
 }
 
 .total-cost {
@@ -104,16 +116,25 @@ h2 {
 }
 
 .total-cost-text {
-  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
   font-weight: 600;
+  line-height: 26.1px;
+  text-align: left;
+
 }
 .quantity {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.2px;
+  text-align: left;
 }
 .total-cost-price {
-font-family: Roboto sans-serif;
+font-family: "Roboto", sans-serif;
 font-size: 26px;
 font-weight: 700;
 line-height: 33.8px;
@@ -127,5 +148,9 @@ text-align: right;
   height: 54px;
   border: none;
   border-radius: 4px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.1px;
 }
 </style>

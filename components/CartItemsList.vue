@@ -79,7 +79,7 @@ const toggleInstallation = () => {
 <style scoped>
 
 .MainTitle {
-  font-family: Lato sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 44px;
   font-weight: 700;
   line-height: 53.03px;
@@ -109,6 +109,10 @@ const toggleInstallation = () => {
 
 .item-name {
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23.2px;
 }
 
 .quantity-container {
@@ -170,13 +174,19 @@ const toggleInstallation = () => {
   font-weight: bold;
   min-width: 20px;
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .item-price {
-  font-size: 16px;
-  font-weight: 700;
   padding-right: 20px;
   color: #333;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 26.1px;
 }
 
 .headerCartItem {
@@ -194,13 +204,17 @@ const toggleInstallation = () => {
   border-radius: 0;
   cursor: pointer;
   outline: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .clear-cart-button:focus {
   outline: none; 
 }
 .headerPQuantity {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 26.1px;
@@ -222,11 +236,19 @@ const toggleInstallation = () => {
 }
 .instalationP {
   color: #797B86;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 .instalationText {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23.2px;
 }
 .instalationImg {
   height: 35px;

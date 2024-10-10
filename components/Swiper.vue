@@ -1,5 +1,6 @@
 <template>
   <div class="swiper-container">
+    <h2 class="swiperTitle"> Просмотреннын товары</h2>
     <swiper 
       :slides-per-view="slidesPerView"
       :space-between="spaceBetween"
@@ -70,6 +71,13 @@ const getProductPrice = (product: Product) => {
   margin: auto;
   padding-top: 30px;
 }
+.swiperTitle {
+  color: #1F2432;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36.16px;
+}
 
 .product-slide {
   display: flex;
@@ -97,12 +105,21 @@ const getProductPrice = (product: Product) => {
 .product-name {
   font-size: 1.2em;
   margin: 10px 0 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.51px;
 }
 
 .product-price {
   font-size: 1em;
   margin: 0 0 10px;
   color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.6px;
+  letter-spacing: 0.005em;
 }
 
 .add-to-cart {
