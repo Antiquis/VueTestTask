@@ -16,6 +16,7 @@
       <div class="total-cost-price">{{ total }} ₽</div>
     </div>
     <button class="buttonToBuy" @click="submitOrder">Оформить заказ</button>
+    <button class="buttonToFastBuy">Купить в 1 клик</button>
   </div>
 </template>
 
@@ -134,19 +135,32 @@ h2 {
   text-align: left;
 }
 .total-cost-price {
-font-family: "Roboto", sans-serif;
+font-family: 'Roboto', sans-serif;
 font-size: 26px;
 font-weight: 700;
 line-height: 33.8px;
 letter-spacing: 0.005em;
 text-align: right;
 }
+
 .buttonToBuy {
   color: #ffffff;
   cursor: pointer;
   background: #0069B4;
   height: 54px;
   border: none;
+  border-radius: 4px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26.1px;
+}
+.buttonToFastBuy {
+  color: #0069B4;
+  cursor: pointer;
+  background: #ffffff;
+  height: 54px;
+  border: solid 2px #0069B4;
   border-radius: 4px;
   font-family: 'Lato', sans-serif;
   font-size: 18px;

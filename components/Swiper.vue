@@ -23,7 +23,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/swiper-bundle.css';
 import { useCartStore } from '~/stores/cart';
@@ -57,11 +56,6 @@ const spaceBetween = 30;
 
 const addToCart = (product: Product) => {
   cartStore.addToCart(product);
-};
-
-const getProductPrice = (product: Product) => {
-  const cartItem = cartStore.cartItems.find(item => item.name === product.name);
-  return cartItem ? cartItem.price * cartItem.quantity : product.price;
 };
 </script>
 

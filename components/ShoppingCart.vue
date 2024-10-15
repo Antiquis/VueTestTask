@@ -52,12 +52,11 @@
     justify-content: flex-end;
   }
   .total-cost-price {
-  font-family: 'Lato', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 17.4px;
   text-align: left;
-
   }
   </style>
   
